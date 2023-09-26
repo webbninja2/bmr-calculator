@@ -1,0 +1,104 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>BMR Calculator</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>      
+<body>  
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-8 bmi-calculator">
+            <div id="calculator">
+                <h2>BMR Calculator</h2>
+                <ul class="nav nav-tabs" id="unitTabs">
+                   <li class="nav-item">
+                      <a class="nav-link  active-tab" id="Metrictab">Metric Units</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class=" nav-link tab" id="UStab">US Units</a>
+                   </li>
+                </ul>
+                <br>
+                <form id="BMRform">
+                   <label>Age (1 - 120 years):</label>
+                   <input type="number" class="ageinput" name="ageinput" id="ageinput" required value="22"min="1" max="120">
+                   <br><br>
+                   <label for="gender">Gender:</label>
+                   <select id="gender" required>
+                      <option value="">Select Gender</option>
+                      <option value="male"selected>Male</option>
+                      <option value="female">Female</option>
+                   </select>
+                   <br><br>
+                   <div id="UStabform" class="hidden">
+                      <div class="row">
+                         <div class="col-md-6">
+                            <label for="heightFeet">Height (feet):</label>
+                            <input type="number" id="feet" placeholder="feet" required min="0" value="5">
+                            <br><br>
+                         </div>
+                         <div class="col-md-6">
+                            <label for="heightInches">Height (inches):</label>
+                            <input type="number" id="inches" placeholder="inches" required min="0" value="5">
+                            <br><br>
+                         </div>
+                      </div>
+                      <label for="weight">Weight (pounds):</label>
+                      <input type="number" id="weightpounds" placeholder="pounds" required  min="0"  value="500">
+                      <br>
+                   </div>
+                   <div id="MetricUnitsform">
+                      <label for="height">Height (cm):</label>
+                      <input type="number" id="height"value="164"required min="0">
+                      <br><br>
+                      <label for="weight">Weight (kg):</label>
+                      <input type="number" id="weight"value="60"required min="0">
+                   </div>
+                   <label for=""id="Resultslabel">Results unit:</label>
+                   
+                   <div class="resultchangeoption">
+                      <label for="Calories"class="resultoutput">
+                      <input type="radio"name="resultoutput"value="Calories"class="radioinput"checked>Calories</label>
+                      <label for=""class="resultoutput">
+                      <input type="radio"name="resultoutput" value="Kilojoules"class="radioinput">Kilojoules</label>
+                   </div>
+                   <input type="submit" value="Calculate" class="btn btn-primary">
+                   <button id="Clear"><i class=""></i> clear</button>
+                </form>
+                <div id="result" class="mt-3">
+                   <h3 class="thead">BMR Condition</h3>
+                   <table id="outputTable">
+                      <tr>
+                         <th>Gender</th>
+                         <td id="genderOutput">male</td>
+                      </tr>
+                      <tr>
+                         <th>Age</th>
+                         <td id="ageOutput">20</td>
+                      </tr>
+                      <tr>
+                         <th id="heightlabel">Height</th>
+                         <td id="heightOutput">164 cm</td>
+                      </tr>
+                      <tr>
+                         <th>Weight</th>
+                         <td id="weightOutput">60 kg</td>
+                      </tr>
+                      <tr>
+                         <th>BMR</th>
+                         <td id="bmrOutput"> 1,520 Calories/day</td>
+                      </tr>
+                   </table>
+                </div>
+            </div>
+        </div>
+        <div class="cols col_4_of_12">
+            <h3>Sidebar</h3>
+        </div>
+    </div>
+</div>
+<script src="assets/js/custom.js"></script>
+</body>  
+</html>

@@ -1,0 +1,23 @@
+#calculator {background-color: #fff;margin: 20px auto;padding: 20px;border-radius: 5px;box-shadow: 0px 0px 10px #ccc;}
+#outputTable {width: 100%;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);}
+#outputTable tr {border-bottom: 1px solid #ddd;}
+#outputTable tr:hover {background-color: #e0e0e0;}
+#outputTable th, #outputTable td {padding: 10px;width: 50%;}
+#outputTable th {background-color: #f2f2f2;}
+div#calculator label {font-weight: 600;}
+h3.thead {background-color: #444444;color: white; margin-bottom: 0px;padding: 10px;}
+div#calculator h2 {color: #337AB7;font-weight: 800;padding: 0px 0px 15px 0px;font-size: 25px;margin: 0;line-height: 1;}
+button#clear {padding: 6px 12px;font-size: 14px;border-radius: 4px;font-weight: 700;border: 1px solid lightgrey;text-transform: capitalize;}
+select#gender {border: 1px solid grey;}
+h3.thead {text-transform: capitalize;}
+button#Clear {padding: 6px 12px;font-size: 14px;border-radius: 4px;font-weight: 700;border: 1px solid lightgrey;text-transform: capitalize;}
+.resultoutput {display:flex; margin-right: 10px;}
+.resultchangeoption {  display: flex;margin-bottom: 12px;}
+.radioinput {  margin-right: 7px;}
+a.nav-link.active-tab {color: #337AB7 !important;background-color: #e5e4e4 !important;border-color: #337AB7 !important;border: 1px solid !important;border-radius: 0px !important;}
+a.nav-link {color: #000 !important;background-color: #fff !important;border: 1px solid #000 !important;border-radius: 0px !important;}
+ul#unitTabs {border: none;}
+.nav-tabs .nav-item {margin: 0 10px 5px 0px;}
+li.nav-item a {padding: 6px 12px;border: 1px solid transparent;border-radius: 4px;font-weight: 700;}
+.nav-link {cursor: pointer;}
+#Resultslabel {margin-top: 22px;}
